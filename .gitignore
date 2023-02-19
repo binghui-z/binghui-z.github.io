@@ -9,6 +9,7 @@
 *.log
 *.out
 *.gz
+*.xdv
 .DS_Store
 tmp.html
 template.html
