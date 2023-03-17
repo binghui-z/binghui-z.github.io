@@ -31,8 +31,8 @@
 \subsection{\textbf{Reconstructing Interacting Hands with Interaction Prior from Monocular Images}}
 IEEE International Conference on Computer Vision (ICCV2023)， 第一作者， (已投稿)
 \begin{itemize}
-  \item 针对双手交互造成的严重遮挡问题，提出了一种新的关节热图表达方式。比起传统的关节热图，我们的方法能够将交互区域的关节自适应地映射到热图上；
-  \item 现有的方法往往是在Interhand2.6M数据集上以images-paired的方式进行训练，会影响模型的泛化性。我们构建的与图像无关的交互先验，能够有效利用更多的多模态数据集，进而提升泛化性；
+  \item 针对双手交互造成的严重遮挡问题，提出了一种新的关节热图表示方法。比起传统的关节热图，所提出的方法能够将交互区域的关节自适应地映射到热图上；
+  \item 现有的方法往往是以images-paired的方式进行训练的，一定程度上影响了模型的泛化性。通过构建与图像无关的交互先验，能够有效利用更多的多模态数据集，进而提升泛化性；
   \item 构建了一个面向双手交互任务的数据集Twohand-500K，该数据集交互状态更加多样，更加合理。
 \end{itemize}
 % \vspace{-2mm}
@@ -41,8 +41,8 @@ IEEE International Conference on Computer Vision (ICCV2023)， 第一作者， (
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023)， 第二作者
 \begin{itemize}
   \item 解决了某些数据集由于遮挡导致的图像外观受损问题，以半监督学习的准则对降质图像进行修复；
-  \item 将ViT作为主干网络，先从降质图像中估计手的结构特征，结构特征用法线表示。为了提高精度，我们训练了结构先验模型，即便对于严重的遮挡，也能够估计准确的结构特征。
-  \item 采用对抗学习策略，将手的外观细节包裹到估计的结构特征上。此过程中，我们结合了pix2pix和cycleGAN的优缺点，提出了一种双重对抗策略，使得恢复出来的外观更加真实。
+  \item 将ViT作为主干网络，先从降质图像中估计手的结构特征，结构特征用法线表示。为了提高精度，预训练了一个结构先验模型，即便对于严重的遮挡，也能够估计准确的结构特征。
+  \item 采用对抗学习策略，将手的外观细节包裹到估计的结构特征上。此过程中，通过结合pix2pix和cycleGAN各自的优点，提出了一种双重对抗策略，使得恢复出来的外观更加真实。
 \end{itemize}
 % \vspace{-2mm}
 
@@ -50,7 +50,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023)， 第二�
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR2022)， 第二作者
 \begin{itemize}
   \item 提出了一种手物交互重建的新规范。借助物理引擎平台对交互的合理性进行评判，并通过迭代采样的方式对不合理的交互进行校正；
-  \item 为了便于碰撞检测，进而判断手物交互过程是否会出现穿模，我们将手和物体用椭球体表示。此外，这种表达方式具备运动学特征，能够更好的模拟交互；
+  \item 为了便于碰撞检测，进而判断手物交互过程是否会出现穿模，巧妙地将手和物体用椭球体表示。此外，这种表达方式具备运动学特征，能够更好地仿真交互过程；
   \item 提出了一个多视角的大规模数据集，该数据集包含准确的姿态标注，同时含有相关的物理指标。
 \end{itemize}
 
