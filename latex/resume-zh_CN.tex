@@ -35,7 +35,7 @@ IEEE International Conference on Computer Vision （ICCV2023）， 第一作者,
   \item 现有的方法往往是在interhand2.6M数据集上以images-paired的方式训练，会导致泛化性受限制。我们通过构建与图像无关的交互先验，能够利用更多的相关数据集，泛化性得到提升；
   \item 构建了一个专门面向双手交互任务的数据集Twohand-500K，该数据集更加多样，更加合理。
 \end{itemize}
-\vspace{-2mm}
+% \vspace{-2mm}
 
 \subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023), 第二作者
@@ -44,14 +44,14 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023), 第二作
   \item 将ViT作为主干网络，先从降质图像中勾勒出手的结构特征，结构特征用法线表示。为了提高精度，我们还利用大量的数据集训练结构先验，即便遮挡严重，也能够估计准确的结构特征。
   \item 采用对抗学习策略，将手的外观细节映包裹到结构特征上。此过程中，我们结合了pix2pix和cycleGAN的优缺点，提出了一种双重对抗策略，使得外观恢复的表现更加鲁棒。
 \end{itemize}
-\vspace{-2mm}
+% \vspace{-2mm}
 
 \subsection{\textbf{Stability-driven Contact Reconstruction From Monocular Color Images}}
 IEEE Conference on Computer Vision and Pattern Recognition(CVPR2022),  第二作者
 \begin{itemize}
   \item 提出了一种手物交互重建的新规范。借助物理引擎平台对交互的合理性进行评判；并通过迭代采样的方式对不合理的交互进行校正；
   \item 为了便于碰撞检测，进而判断手物交互过程是否会出现穿模，我们将手和物体用椭球体表示。此外，这种表达方式具备运动学特征，能够更好的模拟交互；
-  \item 提出了一个多视角的大规模数据集，该数据集包含准确的姿态标注，同时含有相关的物理指标，能够支撑相关工作的开展。
+  \item 提出了一个多视角的大规模数据集，该数据集包含准确的姿态标注，同时含有相关的物理指标。
 \end{itemize}
 
 % \subsection{\textbf{Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images}}
