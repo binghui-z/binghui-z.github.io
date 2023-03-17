@@ -1,10 +1,11 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 % !Mode:: "TeX:UTF-8"
-
+% https://zhuanlan.zhihu.com/p/71432461
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 \usepackage{linespacing_fix} % disable extra space before next section
+\renewcommand{\baselinestretch}{1.2}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -14,29 +15,45 @@
 \basicInfo{
   \email{binghuizuo@gmail.com} \textperiodcentered\ 
   \phone{(+86) 178-5428-7665} \textperiodcentered\ 
-  \faHome{\href{https://binghui-z.github.io/}{Homepage}}\textperiodcentered\ \
-  \faGoogle{\href{https://scholar.google.com/citations?hl=zh-CN&user=YajLTJMAAAAJ}{Google}}
+  \faHome{\href{https://binghui-z.github.io/}{Homepage}}%\textperiodcentered\ \
+  % \faGoogle{\href{https://scholar.google.com/citations?hl=zh-CN&user=YajLTJMAAAAJ}{Google}}
   }
 
 %%%%%%  教育背景
 \section{\faGraduationCap\ 教育背景}
-\datedsubsection{\textbf{东南大学}, 电子信息}{2021 -- 2024}
-\datedsubsection{\textbf{青岛理工大学}, 自动化}{2017 -- 2021}
-\vspace{2mm}
+\textbf{东南大学} （2021 -- 至今）  \hspace{3cm}电子信息  \hspace{3cm}导师：王雁刚（副教授）
+
+\textbf{青岛理工大学} （2017 -- 2021）  \hspace{2.22cm}自动化  \hspace{3.41cm}专业排名：1/161（推免）
 
 %%%%%%  参加的项目及论文
 \section{\faUsers\ 项目经历}
 
-\subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
-IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR),第二作者
+\subsection{\textbf{Reconstructing Interacting Hands with Interaction Prior from Monocular Images}}
+IEEE International Conference on Computer Vision （ICCV2023）， 第一作者, (已投稿)
 \begin{itemize}
   \item 基于半监督学习框架恢复降质图像的受损外观
   \item 基于ViT，从输入图像中描述裸手的结构
   \item 采用对抗学习策略，学习手的外观细节
 \end{itemize}
 
+\subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
+International Conference on Image and Graphics (ICIG2023), 第一作者, (已投稿)
+\begin{itemize}
+  \item 基于半监督学习框架恢复降质图像的受损外观
+  \item 基于ViT，从输入图像中描述裸手的结构
+  \item 采用对抗学习策略，学习手的外观细节
+\end{itemize}
+
+\subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023), 第二作者
+\begin{itemize}
+  \item 解决了数据集中由于遮挡导致的图像外观被破坏问题，以半监督学习的准则对降质图像进行修复；
+  \item 将ViT作为主干网络，先从降质图像中勾勒出手的结构特征，结构特征用法线表示。为了提高精度，我们还利用大量的数据集训练结构先验，即便遮挡严重，也能够估计准确的结构特征。
+  \item 采用对抗学习策略，将手的外观细节映包裹到结构特征上。此过程中，我们结合了pix2pix和cycleGAN的优缺点，提出了一种双重对抗策略，使得外观恢复的表现更加鲁棒。
+\end{itemize}
+
 \subsection{\textbf{Stability-driven Contact Reconstruction From Monocular Color Images}}
-IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR2022),第二作者
+IEEE Conference on Computer Vision and Pattern Recognition(CVPR2022),  第二作者
 
 \begin{itemize}
   \item 使用基于物理引擎的方法进行手物交互重建，并通过物理指标对重建过程进行指导
