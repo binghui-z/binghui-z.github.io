@@ -31,18 +31,11 @@
 \subsection{\textbf{Reconstructing Interacting Hands with Interaction Prior from Monocular Images}}
 IEEE International Conference on Computer Vision （ICCV2023）， 第一作者, (已投稿)
 \begin{itemize}
-  \item 基于半监督学习框架恢复降质图像的受损外观
-  \item 基于ViT，从输入图像中描述裸手的结构
-  \item 采用对抗学习策略，学习手的外观细节
+  \item 针对双手交互遮挡严重的问题，提出了一种新的关节热图表达方式。比起传统的方法，我们的方法能够将交互区域的关节同时映射到热图上；
+  \item 现有的方法往往是在interhand2.6M数据集上以images-paired的方式训练，会导致泛化性受限制。我们通过构建与图像无关的交互先验，能够利用更多的相关数据集，泛化性得到提升；
+  \item 构建了一个专门面向双手交互任务的数据集Twohand-500K，该数据集更加多样，更加合理。
 \end{itemize}
-
-\subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
-International Conference on Image and Graphics (ICIG2023), 第一作者, (已投稿)
-\begin{itemize}
-  \item 基于半监督学习框架恢复降质图像的受损外观
-  \item 基于ViT，从输入图像中描述裸手的结构
-  \item 采用对抗学习策略，学习手的外观细节
-\end{itemize}
+\vspace{-2mm}
 
 \subsection{\textbf{Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination}}
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023), 第二作者
@@ -51,41 +44,38 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR2023), 第二作
   \item 将ViT作为主干网络，先从降质图像中勾勒出手的结构特征，结构特征用法线表示。为了提高精度，我们还利用大量的数据集训练结构先验，即便遮挡严重，也能够估计准确的结构特征。
   \item 采用对抗学习策略，将手的外观细节映包裹到结构特征上。此过程中，我们结合了pix2pix和cycleGAN的优缺点，提出了一种双重对抗策略，使得外观恢复的表现更加鲁棒。
 \end{itemize}
+\vspace{-2mm}
 
 \subsection{\textbf{Stability-driven Contact Reconstruction From Monocular Color Images}}
 IEEE Conference on Computer Vision and Pattern Recognition(CVPR2022),  第二作者
-
 \begin{itemize}
-  \item 使用基于物理引擎的方法进行手物交互重建，并通过物理指标对重建过程进行指导
-  \item 使用椭球表示手和物体的重建结果，有利于物理仿真过程
-  \item 提出了一个多视角、大规模、含有物理指标的手物交互数据集
+  \item 提出了一种手物交互重建的新规范。借助物理引擎平台对交互的合理性进行评判；并通过迭代采样的方式对不合理的交互进行校正；
+  \item 为了便于碰撞检测，进而判断手物交互过程是否会出现穿模，我们将手和物体用椭球体表示。此外，这种表达方式具备运动学特征，能够更好的模拟交互；
+  \item 提出了一个多视角的大规模数据集，该数据集包含准确的姿态标注，同时含有相关的物理指标，能够支撑相关工作的开展。
 \end{itemize}
 
-\subsection{\textbf{多视角同步手势采集系统}}
-\begin{itemize}
-  \item 单反相机和工业相机均匀分布，可用于图像或视频序列数据集的拍摄
-  \item 通过硬件触发的方式实现相机同步拍摄，用于获得高精度的同步数据
-  \item 系统可扩展性强，视角密度大，同步性能高
-\end{itemize}
+% \subsection{\textbf{Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images}}
+% International Conference on Image and Graphics (ICIG2023), 第一作者, (已投稿)
 
-\subsection{\textbf{专利：一种基于物理引擎的三维手物交互重建方法和系统}}
-\vspace{2mm}
+% \subsection{\textbf{专利：一种基于物理引擎的三维手物交互重建方法和系统}}
+% \vspace{-1mm}
 
 %%%%%%  掌握的技能
-\section{\faCogs\ 技能}
+\section{\faCogs\ 个人技能}
+研究兴趣包括计算机视觉和计算机图形学，具体研究方向为三维手部重建，尤其是双手交互重建。
 \begin{itemize} [parsep=0.5ex]
-  \item 编程语言：Python ， C++
+  \item 编程语言：Python， C++
   \item 框架与常用库：PyTorch， OpenCV， Eigen， Open3d
-  \item 其他技能：阅读英文文献与技术文档，Latex，Git
+  \item 其他技能：Latex，Git，Photoshop，Premiere
 \end{itemize}
 
 %%%%%%  荣誉称号吗&奖学金
 \section{\faTrophy\ 获奖情况}
 \begin{itemize}
-    \item{\datedline{三等学业奖学金}{2022.10}}
-    \item{\datedline{山东省优秀毕业生}{2021.7}}
-    \item{\datedline{山东省优秀学生}{2020.5}}
-    \item \datedline{国家奖学金}{2019.9}
+    \item{\datedline{二等学业奖学金}{2022.10}}
+    % \item{\datedline{山东省优秀毕业生}{2021.07}}
+    % \item{\datedline{山东省优秀学生}{2020.05}}
+    \item \datedline{国家奖学金}{2019.09}
 \end{itemize}
 
 \end{document}
