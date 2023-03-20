@@ -1,4 +1,3 @@
-*.pdf
 *.aux
 *.bbl
 *.blg
@@ -13,3 +12,5 @@
 tmp.html
 template.html
 reference
+latex/*.pdf
+resume_academic/*.pdf
