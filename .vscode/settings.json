@@ -100,4 +100,12 @@
   "*.log",
   "*.fdb_latexmk"
   ],
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
   }
