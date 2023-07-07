@@ -22,14 +22,14 @@
               <p style="text-align:center">
                 <name>Binghui Zuo | 左炳辉</name>
               </p>
-              <p>I'm a second-year Master student at <a href="https://www.seu.edu.cn/"> Southeast University</a>. Starting from 2021, I have studied in SEU-VCL Lab, supervised by <a href="https://www.yangangwang.com/"> Prof. Yangang Wang</a>. Prior to that, I got my B.S degree (Top 1% graduates) of automation at <a href="http://www.qut.edu.cn/"> Qingdao University of Technology</a> in 2021, advised by <a href="http://ice.qut.edu.cn/info/1017/4137.htm"> Prof. Zhao</a>.
+              <p>I'm a Ph.D. student at <a href="https://www.seu.edu.cn/"> Southeast University</a>. Starting from 2021, I have studied in Vision and Cognition Lab (VCL), advised by <a href="https://www.yangangwang.com/"> Prof. Yangang Wang</a>. Prior to that, I got my B.E. degree (Top 1% graduates) of automation at <a href="http://www.qut.edu.cn/"> Qingdao University of Technology</a> in 2021, supervised by <a href="http://ice.qut.edu.cn/info/1017/4137.htm"> Prof. Zhao</a>.
               </p>
               </p>
               I'm interested in 3D computer vision and computer graphics. Much of my research is about reconstructing single hand, interacting hands or hand-object from images. Currently, I am attempting to generate personalized human avatars from monocular images with diffusion models. 
               </p>
-              </p>
+              <!-- </p>
               <span style="color:red">Now, I am actively applying for Ph.D position in 2024 fall.</span>
-              </p>
+              </p> -->
               <p style="text-align:center">
                 <a href="mailto:z_binghui@163.com">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=zh-CN&user=YajLTJMAAAAJ">Google Scholar</a> &nbsp/&nbsp
@@ -235,6 +235,43 @@
             <a href="https://pan.seu.edu.cn/#/link/49FA8AC060F9801261509D7ED207026E">Dataset</a>
             <p>
             We use physical engine to optimize reconstructed hand-object interaction, thus produce more realistic result.
+            </p>
+          </td>
+        </tr>
+
+        <!-- ICIG -->
+        <tr onmouseout="IRiHR_stop()" onmouseover="IRiHR_start()">
+          <td style="padding:10px;width:15%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='implicit_image'>
+                <img src='image/IRiHR_1.png' width="170"></div>
+              <img src='image/IRiHR_0.png' width="170">
+            </div>
+            <script type="text/javascript">
+              function IRiHR_start() {
+                document.getElementById('implicit_image').style.opacity = "1";
+              }
+
+              function IRiHR_stop() {
+                document.getElementById('implicit_image').style.opacity = "0";
+              }
+              IRiHR_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images</papertitle>
+            <br>
+            <strong>Binghui Zuo</strong>,
+            Zimeng Zhao, 
+            Wei Xie, 
+            Yangang Wang
+            <br>
+            <em>International Conference on Image and Graphics (ICIG)</em>, 2023
+            <br>
+            <a href="https://binghui-z.github.io/">Project page</a>
+            <p></p>
+            <p>
+            A novel framework for representing the surface of interacting hands with implicit functions is proposed, which implicitly reconstructs interacting hands with image features as query strategy and condition.
             </p>
           </td>
         </tr>
