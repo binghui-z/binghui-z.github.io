@@ -9,16 +9,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😎</text></svg>">
 </head> 
+<style>
+  td {
+    border-bottom: 1px dashed gray; 
+  }
+  td.no-border {
+    border-bottom: none;
+  }
 
+</style>
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
-      <td style="padding:0px">
+      <td class="no-border"; style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td class="no-border"; style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Binghui Zuo | 左炳辉</name>
               </p>
@@ -38,7 +46,7 @@
                 <a href="docs/resume.pdf"> Resumé (PDF) </a>-->
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td class="no-border"; style="padding:2.5%;width:40%;max-width:40%">
               <a href="#"><img style="width:100%;max-width:100%" alt="profile photo" src="image/myself.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
@@ -47,7 +55,7 @@
         <!-- News -->
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <td style="padding:20px;width:100%;vertical-align:middle">
+          <td class="no-border"; style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <hr class="styled-hr" style="width:100%;"></hr>
           </td>
@@ -55,10 +63,13 @@
 
         <ul>
           <li>
-            <span style="color: gray" size="6px">[2023.03]</span> &#127881 One paper accepted by <strong>CVPR2023</strong>! 
+            <span style="color: gray" size="6px">[2023.07]</span> &#127881&#127881&#127881 Two paper accepted by <strong>ICCV2023</strong>!!! My first top conference as the first author!
           </li>
           <li>
-            <span style="color: gray" size="6px">[2023.01]</span> One paper accepted by TVCG2023, and another accepted by CVM2023. 
+            <span style="color: gray" size="6px">[2023.03]</span> One paper accepted by <strong>CVPR2023</strong>.
+          </li>
+          <li>
+            <span style="color: gray" size="6px">[2023.01]</span> One paper accepted by TVCG2023, and another accepted by GM2023. 
           </li>
           <li>
             <span style="color: gray" size="6px">[2022.03]</span> One paper accepted by CVPR 2022. 
@@ -70,7 +81,7 @@
       
         <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td class="no-border"; style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
               <hr class="styled-hr" style="width:100%;"></hr>
             </td>
@@ -79,7 +90,7 @@
 
           <!-- CVPR2023 -->
           <tr onmouseout="markerless_stop()" onmouseover="markerless_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='markerless_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="image/markerless.mp4" type="video/mp4">
@@ -98,7 +109,7 @@
                 markerless_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination</papertitle>
               <br> 
               Zimeng Zhao, 
@@ -116,170 +127,170 @@
             </td>
           </tr>
 
-        <!-- TVCG -->
-        <tr onmouseout="Skeleton_stop()" onmouseover="Skeleton_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='npil_image'>
-                <img src='image/skeleton_1.png' width="160"></div>
-              <img src='image/skeleton0.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function Skeleton_start() {
-                document.getElementById('npil_image').style.opacity = "1";
-              }
+          <!-- TVCG -->
+          <tr onmouseout="Skeleton_stop()" onmouseover="Skeleton_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='npil_image'>
+                  <img src='image/skeleton_1.png' width="160"></div>
+                <img src='image/skeleton0.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function Skeleton_start() {
+                  document.getElementById('npil_image').style.opacity = "1";
+                }
 
-              function Skeleton_stop() {
-                document.getElementById('npil_image').style.opacity = "0";
-              }
-              Skeleton_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles</papertitle>
-            <br>
-            Zimeng Zhao, 
-            Wei Xie, 
-            <strong>Binghui Zuo</strong>,
-            Yangang Wang
-            <br>
-            <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, 2023
-            <br>
-            <a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.html">Project page</a> /
-            <a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.pdf">Paper</a>
-            <p></p>
-            <p>
-            A novel unwrapping method named Spherical Unwrapping Profiles is proposed, which maps a surface into image planes independent of mesh topologies.
-            </p>
-          </td>
-        </tr>
+                function Skeleton_stop() {
+                  document.getElementById('npil_image').style.opacity = "0";
+                }
+                Skeleton_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles</papertitle>
+              <br>
+              Zimeng Zhao, 
+              Wei Xie, 
+              <strong>Binghui Zuo</strong>,
+              Yangang Wang
+              <br>
+              <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, 2023
+              <br>
+              <a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.html">Project page</a> /
+              <a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.pdf">Paper</a>
+              <p></p>
+              <p>
+              A novel unwrapping method named Spherical Unwrapping Profiles is proposed, which maps a surface into image planes independent of mesh topologies.
+              </p>
+            </td>
+          </tr>
 
-        <!-- CVM -->
-        <tr onmouseout="hdo_stop()" onmouseover="hdo_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='hdo_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="image/hdo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='image/hdo.png' width=130>
-            </div>
-            <script type="text/javascript">
-              function hdo_start() {
-                document.getElementById('hdo_image').style.opacity = "1";
-              }
+          <!-- CVPR2022 -->
+          <tr onmouseout="stable_stop()" onmouseover="stable_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='stable_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="image/stable_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='image/stable.png' width=160>
+              </div>
+              <script type="text/javascript">
+                function stable_start() {
+                  document.getElementById('stable_image').style.opacity = "1";
+                }
 
-              function hdo_stop() {
-                document.getElementById('hdo_image').style.opacity = "0";
-              }
-              hdo_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>HMDO : Markerless Multi-view Hand Manipulation Capture with Deformable Objects</papertitle>
-            <br>
-            Wei Xie*, 
-            Zhipeng Yu*, 
-            Zimeng Zhao, 
-            <strong>Binghui Zuo</strong>,
-            Yangang Wang
-            <br>
-            <!-- <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
-            <em>Graphical Models (GM)</em>, 2023 &nbsp
-            <br>
-            <a href="https://arxiv.org/pdf/2301.07652.pdf">Paper</a>
-            <p>
-            We construct the first markerless deformable interaction dataset recording interactive motions of the hands and deformable object. Besides that, a baseline for hand manipulating with deformable objects is proposed.
-            </p>
-          </td>
-        </tr>
+                function stable_stop() {
+                  document.getElementById('stable_image').style.opacity = "0";
+                }
+                stable_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Stability-driven Contact Reconstruction From Monocular Color Images</papertitle>
+              <br>
+              Zimeng Zhao, 
+              <strong>Binghui Zuo</strong>,
+              Wei Xie, 
+              Yangang Wang
+              <br>
+              <!-- <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022 &nbsp
+              <br>
+              <a href="https://www.yangangwang.com/papers/ZZM-SCR-2022-03.html">Project page</a>
+              /
+              <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf">Paper</a>
+              /
+              <a href="https://www.bilibili.com/video/BV1w3411u7Qp/?vd_source=4d390e0266a3ce1a2fad87fff6580e05">Video</a>
+              /
+              <a href="https://pan.seu.edu.cn/#/link/49FA8AC060F9801261509D7ED207026E">Dataset</a>
+              <p>
+              We use physical engine to optimize reconstructed hand-object interaction, thus produce more realistic result.
+              </p>
+            </td>
+          </tr>
+          
+          <!-- CVM -->
+          <tr onmouseout="hdo_stop()" onmouseover="hdo_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hdo_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="image/hdo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='image/hdo.png' width=130>
+              </div>
+              <script type="text/javascript">
+                function hdo_start() {
+                  document.getElementById('hdo_image').style.opacity = "1";
+                }
 
-        <!-- CVPR2022 -->
-        <tr onmouseout="stable_stop()" onmouseover="stable_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='stable_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="image/stable_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='image/stable.png' width=160>
-            </div>
-            <script type="text/javascript">
-              function stable_start() {
-                document.getElementById('stable_image').style.opacity = "1";
-              }
+                function hdo_stop() {
+                  document.getElementById('hdo_image').style.opacity = "0";
+                }
+                hdo_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>HMDO : Markerless Multi-view Hand Manipulation Capture with Deformable Objects</papertitle>
+              <br>
+              Wei Xie*, 
+              Zhipeng Yu*, 
+              Zimeng Zhao, 
+              <strong>Binghui Zuo</strong>,
+              Yangang Wang
+              <br>
+              <!-- <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
+              <em>Graphical Models (GM)</em>, 2023 &nbsp
+              <br>
+              <a href="https://arxiv.org/pdf/2301.07652.pdf">Paper</a>
+              <p>
+              We construct the first markerless deformable interaction dataset recording interactive motions of the hands and deformable object. Besides that, a baseline for hand manipulating with deformable objects is proposed.
+              </p>
+            </td>
+          </tr>
 
-              function stable_stop() {
-                document.getElementById('stable_image').style.opacity = "0";
-              }
-              stable_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Stability-driven Contact Reconstruction From Monocular Color Images</papertitle>
-            <br>
-            Zimeng Zhao, 
-            <strong>Binghui Zuo</strong>,
-            Wei Xie, 
-            Yangang Wang
-            <br>
-            <!-- <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
-            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022 &nbsp
-            <br>
-            <a href="https://www.yangangwang.com/papers/ZZM-SCR-2022-03.html">Project page</a>
-            /
-            <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf">Paper</a>
-            /
-            <a href="https://www.bilibili.com/video/BV1w3411u7Qp/?vd_source=4d390e0266a3ce1a2fad87fff6580e05">Video</a>
-            /
-            <a href="https://pan.seu.edu.cn/#/link/49FA8AC060F9801261509D7ED207026E">Dataset</a>
-            <p>
-            We use physical engine to optimize reconstructed hand-object interaction, thus produce more realistic result.
-            </p>
-          </td>
-        </tr>
+          <!-- ICIG -->
+          <tr onmouseout="IRiHR_stop()" onmouseover="IRiHR_start()">
+            <td class="no-border"; style="padding:10px;width:15%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='implicit_image'>
+                  <img src='image/IRiHR_1.png' width="170"></div>
+                <img src='image/IRiHR_0.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function IRiHR_start() {
+                  document.getElementById('implicit_image').style.opacity = "1";
+                }
 
-        <!-- ICIG -->
-        <tr onmouseout="IRiHR_stop()" onmouseover="IRiHR_start()">
-          <td style="padding:10px;width:15%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='implicit_image'>
-                <img src='image/IRiHR_1.png' width="170"></div>
-              <img src='image/IRiHR_0.png' width="170">
-            </div>
-            <script type="text/javascript">
-              function IRiHR_start() {
-                document.getElementById('implicit_image').style.opacity = "1";
-              }
-
-              function IRiHR_stop() {
-                document.getElementById('implicit_image').style.opacity = "0";
-              }
-              IRiHR_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images</papertitle>
-            <br>
-            <strong>Binghui Zuo</strong>,
-            Zimeng Zhao, 
-            Wei Xie, 
-            Yangang Wang
-            <br>
-            <em>International Conference on Image and Graphics (ICIG)</em>, 2023
-            <br>
-            <a href="https://binghui-z.github.io/">Project page</a>
-            <p></p>
-            <p>
-            A novel framework for representing the surface of interacting hands with implicit functions is proposed, which implicitly reconstructs interacting hands with image features as query strategy and condition.
-            </p>
-          </td>
-        </tr>
+                function IRiHR_stop() {
+                  document.getElementById('implicit_image').style.opacity = "0";
+                }
+                IRiHR_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Zimeng Zhao, 
+              Wei Xie, 
+              Yangang Wang
+              <br>
+              <em>International Conference on Image and Graphics (ICIG)</em>, 2023
+              <br>
+              <a href="https://binghui-z.github.io/">Project page</a>
+              <p></p>
+              <p>
+              A novel framework for representing the surface of interacting hands with implicit functions is proposed, which implicitly reconstructs interacting hands with image features as query strategy and condition.
+              </p>
+            </td>
+          </tr>
 
         <!-- Honors -->
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <td style="padding:20px;width:100%;vertical-align:middle">
+          <td class="no-border"; style="padding:20px;width:100%;vertical-align:middle">
             <heading>Honors & Awards</heading>
             <hr class="styled-hr" style="width:100%;"></hr>
           </td>
@@ -309,7 +320,7 @@
         <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <td style="padding:0px">
+          <td class="no-border"; style="padding:0px">
             <br>
             <p style="text-align:right;font-size:small;">
               Page inspired by <a href="https://jonbarron.info/">Barron</a>.
