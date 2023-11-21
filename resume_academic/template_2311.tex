@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{template_2311} % Use the custom resume.cls style
+
+
+\usepackage[svgnames]{xcolor}
+\definecolor{C2}{RGB}{137, 6, 32}
+\definecolor{C1}{RGB}{0, 109, 119}
+\definecolor{C3}{RGB}{8, 76, 97}
+\definecolor{C4}{RGB}{67, 0, 188}
+
+\usepackage[colorlinks = true,
+            linkcolor = C1,
+            urlcolor  = C4,
+            citecolor = C1,
+            anchorcolor = C1]{hyperref}
+
+\usepackage[left=0.6in,top=0.2in,right=0.6in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\def\myname{\textbf{Binghui Zuo}}
+
+
+\name{Binghui Zuo} % Your name
+\address{Ph.D. Student, Southeast University} % Your secondary addess (optional)
+\address{\href{https://binghui-z.github.io/}{binghui-z.github.io} ~\textbullet~ \href{mailto:binghuizuo@gmail.com}{binghuizuo@gmail.com}} % Your phone number and email
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	Research Interestsend
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+    {\bf Fields:} Computer Vision, Computer Graphics \\
+    {\bf Topics:} Human Hand Reconstruction, Image Synthesis, Motion Generation.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+%--copy and paste this region  if you need more--
+{\bf Southeast University} \hfill {\em Seq 2023 - present} 
+\\ Ph.D. in Control Science and Engineering \hfill {Advisor: \href{https://www.yangangwang.com/}{Prof.Yangang Wang}}
+
+%--copy and paste this region  if you need more--
+{\bf Southeast University} \hfill {\em Seq 2021 - Jun 2023} 
+\\ M.S. in Control Science and Engineering \hfill {Advisor: \href{https://www.yangangwang.com/}{Prof.Yangang Wang}}
+
+{\bf Qingdao University of Technology} \hfill {\em Seq 2017 - Jun 2021} 
+\\ B.S. in Automation, {\bf Rank:} 2/162  \hfill {Advisor: \href{https://ice.qut.edu.cn/info/1017/4137.htm}{Prof.Jingbo Zhao}}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+%--copy and paste this region  if you need more--
+\begin{enumerate}
+\item {Synthesizing Interaction of Two-hand and Articulated Objects from a Single  Target State with Two-stage Diffusion}\\
+Wenqian Sun*, \myname*, Zimeng Zhao, and Yangang Wang  (*equal contribution)\\
+\emph{preprint, submitted to CVPR2024} 
+
+\item {NP-Hand: Novel Perspective Hand Image Synthesis Guided  by Normals} \\
+\myname, Wenqian Sun, Zimeng Zhao, Xiaohan Yuan, and Yangang Wang \\
+\emph{preprint, submitted to TIP}
+
+% \item {Music Conditioned Generation for Human-centric Video} \\
+% Zimeng Zhao, \myname, and Yangang Wang \\
+% \emph{preprint, submitted to TSPL}
+
+\item \href{https://openaccess.thecvf.com/content/ICCV2023/papers/Zuo_Reconstructing_Interacting_Hands_with_Interaction_Prior_from_Monocular_Images_ICCV_2023_paper.pdf} {Reconstructing Interacting Hands with Interaction Prior from Monocular Images}\\
+\myname, Zimeng Zhao, Wenqian Sun, Wei Xie, Chao Wen, and Yangang Wang \\
+\emph{IEEE International Conference on Computer Vision (ICCV), 2023}
+
+\item \href{https://openaccess.thecvf.com/content/ICCV2023/papers/Xie_Nonrigid_Object_Contact_Estimation_With_Regional_Unwrapping_Transformer_ICCV_2023_paper.pdf} {Nonrigid Object Contact Estimation With Regional Unwrapping Transformer} \\
+Wei Xie, Zimeng Zhao, Shiying Li, \myname, and Yangang Wang \\
+\emph{IEEE/CVF International Conference on Computer Vision (ICCV), 2023}
+
+\item \href{https://openaccess.thecvf.com/content/CVPR2023/papers/Zhao_Semi-Supervised_Hand_Appearance_Recovery_via_Structure_Disentanglement_and_Dual_Adversarial_CVPR_2023_paper.pdf} {Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination} \\
+Zimeng Zhao, \myname, Zhiyu Long, and Yangang Wang\\
+\emph{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023}
+
+\item \href{https://ieeexplore.ieee.org/document/10025400} {Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles}\\
+Zimeng Zhao, Wei Xie, \myname, and Yangang Wang
+\emph{IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023}
+
+\item \href{} {HMDO: Markerless Multi-view Hand Manipulation Capture with Deformable Objects} \\
+Wei Xie, Zhipeng Yu, Zimeng Zhao, \myname, Yangang Wang\\
+\emph{International Conference on Computational Visual Media (CVM), 2023}
+
+\item \href{https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf} {Stability-driven Contact Reconstruction From Monocular Color Images}\\
+Zimeng Zhao, \myname, Wei Xie, and Yangang Wang\\
+\emph{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022} 
+\end{enumerate}
+\end{rSection}
+%--------------------------------------------------------------------------------
+%    Awards & Honors
+%------------------------------------------------------------------------------
+\begin{rSection}{Awards \& Honors}
+\begin{itemize}
+    \item[-] Huawei Scholarship \hfill 2023
+    \item[-] Second-class Scholarship in Southeast University \hfill 2022
+    \item[-] Excellent Graduate of Shandong Province \hfill 2021
+    \item[-] Outstanding college students in Shandong Province \hfill 2020
+    \item[-] National Scholarship \hfill 2019
+    \item[-] National Encouragement Scholarship \hfill 2018, 2020
+\end{itemize}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%	Professional Service
+%----------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+    {\bf Languages:}  ~Python, ~C++, ~PyTorch \\
+    {\bf Tools:} ~\LaTeX, ~Git, ~Photoshop
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Professional Service    
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Service} 
+    {\bf Conference Reviewer:} {CVPR2024, ~ICCV2023, ~CVPR2023, ~NeurIPS2022}
+\end{rSection}
+
+\end{document}----------------------------
+
