@@ -11,13 +11,13 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{template_2311} % Use the custom resume.cls style
-
+\usepackage{enumitem}
 
 \usepackage[svgnames]{xcolor}
 \definecolor{C2}{RGB}{137, 6, 32}
 \definecolor{C1}{RGB}{0, 109, 119}
 \definecolor{C3}{RGB}{8, 76, 97}
-\definecolor{C4}{RGB}{67, 0, 188}
+\definecolor{C4}{RGB}{67, 0, 212}
 
 \usepackage[colorlinks = true,
             linkcolor = C1,
@@ -25,7 +25,7 @@
             citecolor = C1,
             anchorcolor = C1]{hyperref}
 
-\usepackage[left=0.6in,top=0.2in,right=0.6in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \def\myname{\textbf{Binghui Zuo}}
@@ -64,18 +64,18 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Publications}
 %--copy and paste this region  if you need more--
-\begin{enumerate}
+\begin{enumerate}[label={[}\arabic*{]}, ref={\arabic*}]
 \item {Synthesizing Interaction of Two-hand and Articulated Objects from a Single  Target State with Two-stage Diffusion}\\
 Wenqian Sun*, \myname*, Zimeng Zhao, and Yangang Wang  (*equal contribution)\\
-\emph{preprint, submitted to CVPR2024} 
+preprint, submitted to \emph{CVPR2024} 
 
 \item {NP-Hand: Novel Perspective Hand Image Synthesis Guided  by Normals} \\
 \myname, Wenqian Sun, Zimeng Zhao, Xiaohan Yuan, and Yangang Wang \\
-\emph{preprint, submitted to TIP}
+preprint, submitted to \emph{IEEE Transactions on Image Processing}
 
-% \item {Music Conditioned Generation for Human-centric Video} \\
-% Zimeng Zhao, \myname, and Yangang Wang \\
-% \emph{preprint, submitted to TSPL}
+\item {Music Conditioned Generation for Human-centric Video} \\
+Zimeng Zhao, \myname, and Yangang Wang \\
+preprint, submitted to \emph{IEEE Signal Processing Letters}
 
 \item \href{https://openaccess.thecvf.com/content/ICCV2023/papers/Zuo_Reconstructing_Interacting_Hands_with_Interaction_Prior_from_Monocular_Images_ICCV_2023_paper.pdf} {Reconstructing Interacting Hands with Interaction Prior from Monocular Images}\\
 \myname, Zimeng Zhao, Wenqian Sun, Wei Xie, Chao Wen, and Yangang Wang \\
@@ -85,17 +85,21 @@ Wenqian Sun*, \myname*, Zimeng Zhao, and Yangang Wang  (*equal contribution)\\
 Wei Xie, Zimeng Zhao, Shiying Li, \myname, and Yangang Wang \\
 \emph{IEEE/CVF International Conference on Computer Vision (ICCV), 2023}
 
+\item \href{https://link.springer.com/chapter/10.1007/978-3-031-46305-1_2} {Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images} \\
+\myname, Zimeng Zhao, Wei Xie, and Yangang Wang \\
+\emph{International Conference on Image and Graphics (ICIG), 2023} \textcolor[rgb]{1,0,0}{(Oral Presentation)}
+
 \item \href{https://openaccess.thecvf.com/content/CVPR2023/papers/Zhao_Semi-Supervised_Hand_Appearance_Recovery_via_Structure_Disentanglement_and_Dual_Adversarial_CVPR_2023_paper.pdf} {Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination} \\
 Zimeng Zhao, \myname, Zhiyu Long, and Yangang Wang\\
 \emph{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023}
 
+\item \href{https://www.sciencedirect.com/science/article/pii/S1524070323000085} {HMDO: Markerless Multi-view Hand Manipulation Capture with Deformable Objects} \\
+Wei Xie, Zhipeng Yu, Zimeng Zhao, \myname, Yangang Wang\\
+\emph{International Conference on Computational Visual Media (CVM), 2023} \textcolor[rgb]{1,0,0}{(Oral Presentation)}
+
 \item \href{https://ieeexplore.ieee.org/document/10025400} {Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles}\\
 Zimeng Zhao, Wei Xie, \myname, and Yangang Wang
 \emph{IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023}
-
-\item \href{} {HMDO: Markerless Multi-view Hand Manipulation Capture with Deformable Objects} \\
-Wei Xie, Zhipeng Yu, Zimeng Zhao, \myname, Yangang Wang\\
-\emph{International Conference on Computational Visual Media (CVM), 2023}
 
 \item \href{https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf} {Stability-driven Contact Reconstruction From Monocular Color Images}\\
 Zimeng Zhao, \myname, Wei Xie, and Yangang Wang\\
@@ -129,7 +133,7 @@ Zimeng Zhao, \myname, Wei Xie, and Yangang Wang\\
 %	Professional Service    
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Professional Service} 
-    {\bf Conference Reviewer:} {CVPR2024, ~ICCV2023, ~CVPR2023, ~NeurIPS2022}
+    {\bf Conference Reviewer:} {CVPR2024, ~ICCV2023, ~CVPR2023, ~NeurIPS2022, ~ECCV2022}
 \end{rSection}
 
 \end{document}----------------------------
