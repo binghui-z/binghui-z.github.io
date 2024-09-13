@@ -108,4 +108,5 @@
     "latex",
     "plaintext"
   ],
+  "editor.inlineSuggest.showToolbar": "onHover",
   }

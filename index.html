@@ -67,11 +67,14 @@
         </table>
 
         <ul>
-          <!-- <li>
-            <span style="color: rgb(48, 151, 229)" size="6px">[2023.09]</span> We submit NP-Hand to journal.
-          </li> -->
           <li>
-            <span style="color: gray" size="6px">[2023.07]</span> &#127881&#127881&#127881 Two papers accepted by <strong>ICCV2023</strong>!!! My first top conference as the first author!
+            <span style="color: gray" size="6px">[2024.09]</span> &#127881&#127881&#127881 One paper accepted by <strong>TVCG</strong>!!! My first top journal as the first author!
+          </li>
+          <li>
+            <span style="color: gray" size="6px">[2024.12]</span> One paper accepted by <strong>SPL</strong>.
+          </li>
+          <li>
+            <span style="color: gray" size="6px">[2023.07]</span> Two papers accepted by <strong>ICCV2023</strong>!!! My first top conference as the first author!
           </li>
           <li>
             <span style="color: gray" size="6px">[2023.03]</span> One paper accepted by <strong>CVPR2023</strong>.
@@ -95,6 +98,119 @@
             </td>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <!-- ======================================================================================================= -->
+          <!-- ECCV1投稿 -->
+          <tr onmouseout="GraspDiff_stop()" onmouseover="GraspDiff_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='GraspDiff_image'>
+                  <img src='image/GraspDiff_0.png' width="160"></div>
+                <img src='image/GraspDiff_1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function GraspDiff_start() {
+                  document.getElementById('GraspDiff_image').style.opacity = "1";
+                }
+
+                function GraspDiff_stop() {
+                  document.getElementById('GraspDiff_image').style.opacity = "0";
+                }
+                GraspDiff_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>GraspDiff: Fast and Diverse Grasping Generation with Multimodal Guided Diffusion</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Zimeng Zhao, 
+              Wenqian Sun,
+              Xiaohan Yuan,
+              Zhipeng Yu,
+              Yangang Wang
+              <br>
+              <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, 2024
+              <br>
+              <a href="https://binghui-z.github.io/">Paper</a>
+              <p></p>
+              <p></p>
+            </td>
+          </tr>
+
+          <!-- ECCV2投稿 -->
+          <!-- <tr onmouseout="SynInter_stop()" onmouseover="SynInter_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='SynInter_image'>
+                  <img src='image/SynInter_0.png' width="160"></div>
+                <img src='image/SynInter_1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function SynInter_start() {
+                  document.getElementById('SynInter_image').style.opacity = "1";
+                }
+
+                function SynInter_stop() {
+                  document.getElementById('SynInter_image').style.opacity = "0";
+                }
+                SynInter_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Synthesizing Interaction of Two Hands and Articulated Objects from a Single Target State with Two-stage Diffusion</papertitle>
+              <br>
+              Wenqian Sun,
+              <strong>Binghui Zuo</strong>,
+              Zimeng Zhao, 
+              Zijing Wu,
+              Yangang Wang
+              <br>
+              <em>Preprint
+              <br>
+              <p></p>
+              <p>
+                This paper focuses on a new task of synthesizing interaction between two hands and an articulated object from a single target state and presents an effective approach to achieve this task.
+              </p>
+            </td>
+          </tr> -->
+          
+          <!-- ECCV3投稿 -->
+          <!-- <tr onmouseout="T2C_stop()" onmouseover="T2C_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='T2C_image'>
+                  <img src='image/T2C_0.png' width="160"></div>
+                <img src='image/T2C_1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function T2C_start() {
+                  document.getElementById('T2C_image').style.opacity = "1";
+                }
+
+                function T2C_stop() {
+                  document.getElementById('T2C_image').style.opacity = "0";
+                }
+                T2C_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>T2C: Text-guided 4D Cloth Generation</papertitle>
+              <br>
+              Zhipeng Yu,
+              Zimeng Zhao, 
+              Yanxi Du,
+              Yuzhou Zheng,
+              <strong>Binghui Zuo</strong>,
+              Yangang Wang
+              <br>
+              <em>Preprint
+              <br>
+              <p></p>
+              <p>
+                This paper introduces a novel approach named T2C, which employs a multilayered clothing representation and a physics-based clothing animation paradigm to generate text-controlled Clothed 4D Humans, expanding the boundaries of the aforementioned issues.
+              </p>
+            </td>
+          </tr> -->
 
           <!-- TIP投稿 -->
           <!-- <tr onmouseout="NPHand_stop()" onmouseover="NPHand_start()">
@@ -128,10 +244,47 @@
               <br>
               <p></p>
               <p>
-              In this paper, we propose NP-Hand, a framework that elegantly combines the diffusion model and generative adversarial network to synthesize hand images from novel perspectives. To maintain the consistency between inputs and synthesis, we creatively introduce normal maps into NP-Hand to guide the whole synthesizing process
+              In this paper, we propose NP-Hand, a framework that elegantly combines the diffusion model and generative adversarial network to synthesize hand images from novel perspectives. To maintain the consistency between inputs and synthesis, we creatively introduce normal maps into NP-Hand to guide the whole synthesizing process.
               </p>
             </td>
           </tr> -->
+          <!-- ======================================================================================================= -->
+
+          <!-- SPL -->
+          <tr onmouseout="MCG_stop()" onmouseover="MCG_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='MCG_image'>
+                  <img src='image/music_0.jpg' width="160"></div>
+                <img src='image/music_0.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function MCG_start() {
+                  document.getElementById('MCG_image').style.opacity = "1";
+                }
+
+                function MCG_stop() {
+                  document.getElementById('MCG_image').style.opacity = "0";
+                }
+                MCG_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Music Conditioned Generation for Human-centric Video</papertitle>
+              <br>
+              Zimeng Zhao,
+              <strong>Binghui Zuo</strong>,
+              Yangang Wang
+              <br>
+              <em>IEEE Signal Processing Letters (SPL)</em>, 2024
+              <br>
+              <a href="https://ieeexplore.ieee.org/document/10415104">Paper</a>
+              <p></p>
+              <p>
+              Our key idea is to build a temporal generation framework dominated by DDPM and assisted by VAE and GAN. To produce videos with both long duration and high quality, our framework first generates small-scale keyframes and then generates high-resolution videos.
+              </p>
+            </td>
+          </tr>
 
           <!-- ICCV2023 -->
           <tr onmouseout="interprior_stop()" onmouseover="interprior_start()">
@@ -406,7 +559,7 @@
               <br>
               <em>International Conference on Image and Graphics (ICIG, Oral)</em>, 2023
               <br>
-              <a href="https://binghui-z.github.io/">Project page</a>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-46305-1_2">Paper</a>
               <p></p>
               <p>
               A novel framework for representing the surface of interacting hands with implicit functions is proposed, which implicitly reconstructs interacting hands with image features as query strategy and condition.
