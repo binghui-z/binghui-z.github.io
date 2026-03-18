@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MaskDexGrasp</title>
+    <!-- Bootstrap -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+      body {
+        background: rgb(255, 255, 255) no-repeat fixed top left;
+        font-family: "Inter", 'Open Sans', sans-serif;
+      }
+    </style>
+
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 style="font-size:30px;">MaskDexGrasp: Generative Masked Modeling for <br>Part-Aware Dexterous Grasp Synthesis </h2>
+            <!-- <h4 style="color:rgb(54, 125, 189);"> arXiv 2025 </h4> -->
+            <hr>
+              <a href="https:binghui-z.github.io/">Binghui Zuo</a>,&nbsp; &nbsp;
+              Lin Zhou,&nbsp; &nbsp;
+              Haoxuan Xu,&nbsp; &nbsp;
+              Jianan Yan,&nbsp; &nbsp;
+              <a href="https://zhipengyu28.github.io/">Zhipeng Yu</a>,&nbsp; &nbsp;
+              Zekai Liu,&nbsp; &nbsp;
+              <a href="https://www.yangangwang.com/">Yangang Wang</a><sup>*</sup>&nbsp; &nbsp;
+              <br>
+              <br>
+            <p>
+              Southeast University, China &nbsp; &nbsp; <br>
+            </p>
+            <p>
+              <sup>*</sup> corresponding author &nbsp;
+              <br>
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper </a>
+                  </p>
+              </div>
+              <div class="column">
+                <p class="mb-5">
+                  <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank">
+                  <i class="fa fa-github-alt"></i> Code (Coming soon) </a>
+                </p>
+              </div>
+              <div class="column">
+                <p class="mb-5">
+                  <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank">
+                  <i class="fa fa-file"></i> Dataset (Coming soon) </a>
+                </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <video class="video-container" src="images/cvpr2026.mp4" autoplay muted controls>
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  
+  
+  <br>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Abstract</strong></h2>
+            <hr style="margin-top:0px">
+              <p class="text-justify" >
+                Dexterous grasp generation is a predominant task that enables robots to perform human-level manipulation. However, a dexterous hand always maintains high-dimensional DoF and actuation space, making existing approaches that rely on holistic latent representations difficult to produce high-quality and semantically aligned grasps. In this paper, we propose MaskDexGrasp to address these challenges. We first present a part-aware grasp tokenizer that decomposes dexterous grasps into discrete tokens, facilitating compositional modeling of anatomical dependencies. Building upon this representation, a bidirectional masked grasp transformer is then developed to predict grasp tokens conditioned on object geometry and task description, ensuring coherent grasp generation while allowing fine-grained part-level editing. To facilitate evaluation, we construct a dexterous grasp dataset that comprises 65K grasping instances and 260K richly annotated descriptions covering 11 tasks. Comprehensive experiments demonstrate that our method achieves the state-of-the-art performance. Our code and dataset will be released upon acceptance.
+              </p>
+              <div class="row justify-content-center" style="align-items:center; display:flex;"></div>
+                <img src="images/teaser.jpg" alt="input" class="img-responsive graph" width="100%"/>
+              </div>
+            <br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Pipeline</strong></h2>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+          (a) <strong>Grasp Tokenizer</strong> encodes the raw poses into discrete grasp tokens via part-aware VQ-VAE models, which consist of six codebooks (one palm and five fingers). (b) <strong>Masked Transformer</strong> adopts a bidirectional autoregressive manner to learn the probabilistic distributions of these tokens, conditioned on the object geometry and textual description. (c) During <strong>Inference</strong>, the masked transformer progressively and iteratively predicts multiple tokens with high scores from an empty canvas.
+          </p>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/pipeline.jpg" alt="input" class="img-responsive graph" width="100%"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']],
+      macros: {
+        bm: ["{\\boldsymbol #1}",1],
+      }}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
