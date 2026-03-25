@@ -68,6 +68,9 @@
 
         <ul>
           <li>
+            <span style="color: gray" size="6px">[2025.11]</span> &#127881&#127881&#127881 Two papers accepted by <strong>CVPR2026</strong> and one paper accepted by <strong>TIE</strong>.
+          </li>
+          <li>
             <span style="color: gray" size="6px">[2025.11]</span> One paper accepted by <strong>PR</strong>.
           </li>
           <li>
@@ -115,7 +118,132 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           <!-- ======================================================================================================= -->
+          <!-- CVPR投稿 -->
+          <tr onmouseout="MaskDexGrasp_stop()" onmouseover="MaskDexGrasp_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='MaskDexGrasp_image'><video  width=100% height=80% muted autoplay loop>
+                <source src="image/maskdexgrasp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='image/maskdexgrasp_teaser.jpg' width=160>
+              </div>
+              <script type="text/javascript">
+                function MaskDexGrasp_start() {
+                  document.getElementById('MaskDexGrasp_image').style.opacity = "1";
+                }
 
+                function MaskDexGrasp_stop() {
+                  document.getElementById('MaskDexGrasp_image').style.opacity = "0";
+                }
+                MaskDexGrasp_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> MaskDexGrasp:GenerativeMaskedModelingforPart-AwareDexterousGrasp Synthesis</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Lin Zhou, 
+              Haoxuan Xu, 
+              Jianan Yan, 
+              Zhipeng Yu, 
+              Zekai Liu, 
+              Yangang Wang
+              <br>
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+              <br>
+              <p></p>
+              <p>
+              In this paper, we propose MaskDexGrasp to address these challenges. We first present a part-aware grasp tokenizer that decomposes dexterous grasps into discrete tokens, and then develop a bidirectional masked grasp transformerto predict grasp tokens conditioned on object geometry and task description.
+              </p>
+            </td>
+          </tr>
+
+          <!-- TCSVT投稿 -->
+          <tr onmouseout="uvdiff_stop()" onmouseover="uvdiff_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='UVDiff_image'>
+                  <img src='image/uvdiff.jpg' width="160"></div>
+                <img src='image/uvdiff.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function uvdiff_start() {
+                  document.getElementById('UVDiff_image').style.opacity = "1";
+                }
+
+                function uvdiff_stop() {
+                  document.getElementById('UVDiff_image').style.opacity = "0";
+                }
+                uvdiff_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>UVDiff: Learning Contact-Aware UV Diffusion to Reconstruct Hand-Object Interaction from Monocular Images</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Lin Zhou, 
+              Xiaohan Yuan, 
+              Wenqian Sun, 
+              Yangang Wang.
+              <br>
+              <em>Preprint, 2025
+              <br>
+              <a href="https://binghui-z.github.io/">Paper</a>
+              /
+              <a href="https://www.yangangwang.com/#publication">Project</a>
+              <p></p>
+              <p>
+              In this paper, we emphasize that achieving promising hand-object reconstruction fundamentally relies on an effective representation. To this end, we propose a contact-aware UV map that unifies hand topology and contact patterns within a 2D UV space.
+              </p>
+            </td>
+          </tr>
+
+          <!-- TIE投稿 -->
+          <tr onmouseout="tie_stop()" onmouseover="tie_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tie_image'><video  width=100% height=80% muted autoplay loop>
+                <source src="image/TIE.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='image/tie_teaser.jpg' width=160>
+              </div>
+
+              <script type="text/javascript">
+                function tie_start() {
+                  document.getElementById('tie_image').style.opacity = "1";
+                }
+
+                function tie_stop() {
+                  document.getElementById('tie_image').style.opacity = "0";
+                }
+                tie_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Learning Part-Aware Functional Handovers for Human-to-Robot Collaboration</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Zhuolin Deng,
+              Zhipeng Yu,
+              Yuzhou Zheng,
+              Wenqian Sun,
+              Yangang Wang
+              <br>
+              <em>IEEE Transactions on Industrial Electronics (TIE), 2025
+              <br>
+              <a href="https://binghui-z.github.io/">Paper</a>
+              /
+              <a href="https://www.yangangwang.com/#publication">Project</a>
+              <p></p>
+              <p>
+              In this paper, we propose a part-aware handover framework that enables the robot to recognize the intrinsic properties of objects, thus performing receiving behaviors that are functionally aligned with human delivery actions.
+              </p>
+            </td>
+          </tr>
+
+          <!-- PR -->
           <tr onmouseout="SynInter_stop()" onmouseover="SynInter_start()">
             <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -133,7 +261,7 @@
                 function SynInter_stop() {
                   document.getElementById('SynInter_image').style.opacity = "0";
                 }
-                stable_stop()
+                SynInter_stop()
               </script>
             </td>
             <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
@@ -619,6 +747,10 @@
           </td>
         </table>
           <ul>
+            <li style="padding-bottom:0.5em">
+              <span style="display:inline-block;width:6em">2025.11</span>
+              <span>National Scholarship. </span>
+            </li>
             <li style="padding-bottom:0.5em">
               <span style="display:inline-block;width:6em">2023.04</span>
               <span>Huawei Scholarship. </span>
