@@ -118,6 +118,47 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           <!-- ======================================================================================================= -->
+
+          <!-- TCSVT投稿 -->
+          <tr onmouseout="uvdiff_stop()" onmouseover="uvdiff_start()">
+            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='UVDiff_image'>
+                  <img src='image/uvdiff.jpg' width="160"></div>
+                <img src='image/uvdiff.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function uvdiff_start() {
+                  document.getElementById('UVDiff_image').style.opacity = "1";
+                }
+
+                function uvdiff_stop() {
+                  document.getElementById('UVDiff_image').style.opacity = "0";
+                }
+                uvdiff_stop()
+              </script>
+            </td>
+            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>UVDiff: Learning Contact-Aware UV Diffusion to Reconstruct Hand-Object Interaction from Monocular Images</papertitle>
+              <br>
+              <strong>Binghui Zuo</strong>,
+              Lin Zhou, 
+              Xiaohan Yuan, 
+              Wenqian Sun, 
+              Yangang Wang.
+              <br>
+              <em>Preprint, 2026
+              <br>
+              <a href="https://binghui-z.github.io/">Paper</a>
+              /
+              <a href="https://www.yangangwang.com/#publication">Project</a>
+              <p></p>
+              <p>
+              In this paper, we emphasize that achieving promising hand-object reconstruction fundamentally relies on an effective representation. To this end, we propose a contact-aware UV map that unifies hand topology and contact patterns within a 2D UV space.
+              </p>
+            </td>
+          </tr>
+
           <!-- CVPR投稿 -->
           <tr onmouseout="MaskDexGrasp_stop()" onmouseover="MaskDexGrasp_start()">
             <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
@@ -155,46 +196,6 @@
               <p></p>
               <p>
               In this paper, we propose MaskDexGrasp to address these challenges. We first present a part-aware grasp tokenizer that decomposes dexterous grasps into discrete tokens, and then develop a bidirectional masked grasp transformerto predict grasp tokens conditioned on object geometry and task description.
-              </p>
-            </td>
-          </tr>
-
-          <!-- TCSVT投稿 -->
-          <tr onmouseout="uvdiff_stop()" onmouseover="uvdiff_start()">
-            <td class="no-border"; style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='UVDiff_image'>
-                  <img src='image/uvdiff.jpg' width="160"></div>
-                <img src='image/uvdiff.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function uvdiff_start() {
-                  document.getElementById('UVDiff_image').style.opacity = "1";
-                }
-
-                function uvdiff_stop() {
-                  document.getElementById('UVDiff_image').style.opacity = "0";
-                }
-                uvdiff_stop()
-              </script>
-            </td>
-            <td class="no-border"; style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>UVDiff: Learning Contact-Aware UV Diffusion to Reconstruct Hand-Object Interaction from Monocular Images</papertitle>
-              <br>
-              <strong>Binghui Zuo</strong>,
-              Lin Zhou, 
-              Xiaohan Yuan, 
-              Wenqian Sun, 
-              Yangang Wang.
-              <br>
-              <em>Preprint, 2025
-              <br>
-              <a href="https://binghui-z.github.io/">Paper</a>
-              /
-              <a href="https://www.yangangwang.com/#publication">Project</a>
-              <p></p>
-              <p>
-              In this paper, we emphasize that achieving promising hand-object reconstruction fundamentally relies on an effective representation. To this end, we propose a contact-aware UV map that unifies hand topology and contact patterns within a 2D UV space.
               </p>
             </td>
           </tr>
