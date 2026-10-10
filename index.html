@@ -8,19 +8,59 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <nav aria-label="Primary navigation">
-    <a href="index.html" class="active" aria-current="page">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="publications.html">Publications</a>
-    <a href="others.html">Others</a>
-  </nav>
-
   <main class="container" id="main-content">
     <header class="home-header">
       <img src="assets/myself.jpg" alt="Portrait of Binghui Zuo" class="home-avatar">
       <h1>Binghui Zuo (左炳辉)</h1>
       <div class="subtitle">Ph.D. Candidate @ Southeast University</div>
     </header>
+
+    <nav class="home-navigation" aria-label="Primary navigation">
+      <a href="profile.html" class="home-nav-item">
+        <span class="home-nav-title">Profile</span>
+        <span class="home-nav-caption">About &amp; News</span>
+        <span class="home-nav-visual profile-visual" aria-hidden="true">
+          <span class="profile-head"></span>
+          <span class="profile-body"></span>
+          <span class="profile-line line-one"></span>
+          <span class="profile-line line-two"></span>
+        </span>
+      </a>
+      <a href="publications.html" class="home-nav-item">
+        <span class="home-nav-title">Publications</span>
+        <span class="home-nav-caption">Research Papers</span>
+        <span class="home-nav-visual publication-visual" aria-hidden="true">
+          <span class="chart-bar bar-one"></span>
+          <span class="chart-bar bar-two"></span>
+          <span class="chart-bar bar-three"></span>
+          <span class="chart-bar bar-four"></span>
+        </span>
+      </a>
+      <a href="projects.html" class="home-nav-item">
+        <span class="home-nav-title">Projects</span>
+        <span class="home-nav-caption">Selected Projects</span>
+        <span class="home-nav-visual project-visual" aria-hidden="true">
+          <span class="project-link link-one"></span>
+          <span class="project-link link-two"></span>
+          <span class="project-link link-three"></span>
+          <span class="project-node node-one"></span>
+          <span class="project-node node-two"></span>
+          <span class="project-node node-three"></span>
+          <span class="project-node node-four"></span>
+        </span>
+      </a>
+      <a href="team.html" class="home-nav-item">
+        <span class="home-nav-title">Team</span>
+        <span class="home-nav-caption">People &amp; Collaboration</span>
+        <span class="home-nav-visual team-visual" aria-hidden="true">
+          <span class="team-connection connection-left"></span>
+          <span class="team-connection connection-right"></span>
+          <span class="team-person person-one"><span class="team-head"></span><span class="team-body"></span></span>
+          <span class="team-person person-two"><span class="team-head"></span><span class="team-body"></span></span>
+          <span class="team-person person-three"><span class="team-head"></span><span class="team-body"></span></span>
+        </span>
+      </a>
+    </nav>
 
     <section class="news-section" aria-labelledby="news-title">
       <h2 id="news-title"><span class="news-icon" aria-hidden="true">📰</span><i>News</i></h2>
