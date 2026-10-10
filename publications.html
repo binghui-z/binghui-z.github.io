@@ -14,71 +14,87 @@
     <div class="publication-filters" role="group" aria-label="Filter publications by research topic">
       <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">ALL</button>
       <button type="button" class="filter-button" data-filter="preprint" aria-pressed="false">Preprint</button>
-      <button type="button" class="filter-button" data-filter="robot-manipulation" aria-pressed="false">Robot Manipulation</button>
-      <button type="button" class="filter-button" data-filter="generative-models" aria-pressed="false">Generative Models</button>
-      <button type="button" class="filter-button" data-filter="3d-reconstruction" aria-pressed="false">3D Reconstruction</button>
+      <button type="button" class="filter-button" data-filter="robot-learning" aria-pressed="false">Robot Learning</button>
+      <button type="button" class="filter-button" data-filter="full-body-modeling" aria-pressed="false">Full-Body Modeling</button>
+      <button type="button" class="filter-button" data-filter="hand-object-interaction" aria-pressed="false">Hand-Object Interaction</button>
     </div>
-    <span class="paper-note">(* equal contribution)</span>
-    <p class="filter-status" aria-live="polite"><span id="visible-paper-count">14</span> publications</p>
+    <span class="paper-note">(* equal contribution, † project lead, ‡ corresponding author)</span>
+    <p class="filter-status" aria-live="polite"><span id="visible-paper-count">18</span> publications</p>
 
     <section class="category-section" aria-label="Publication list">
       <div class="paper-list" id="publication-list">
-        <article class="paper-item" data-category="preprint generative-models 3d-reconstruction">
+        <article class="paper-item" data-category="preprint robot-learning">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/Preprint_teleop/teaser.png"><source src="assets/paper/Preprint_teleop/demo.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">A Low-Latency and Stability-Aware Teleoperation System for Dexterous Arm-Hand Manipulation</strong><strong>Binghui Zuo*</strong>, Yuhang Kong*, Yihao Bai*, Yue Yu, Yiping Li, and Yangang Wang‡<br><em>Preprint, 2026</em><p class="paper-summary">A real-time teleoperation system used to capture dexterous hand demonstrations, which also support collecting tactile signals.</p></div>
+        </article>
+        <article class="paper-item" data-category="preprint robot-learning">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/Preprint_mani/teaser.png"><source src="assets/paper/Preprint_mani/demo.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">How to Sustain Tool Use? Interaction-Stable Dexterous Manipulation of Articulated Tools</strong>Yiping Li*, <strong>Binghui Zuo*†</strong>, Anwei Zhang, Zhipeng Yu, Yuzhou Zheng, Zijing Wu, and Yangang Wang‡<br><em>Preprint, 2026</em><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
+        </article>
+        <article class="paper-item" data-category="preprint robot-learning">
           <div class="paper-media"><img src="assets/paper/Preprint_uv/uvdiff.jpg" alt="UVDiff teaser"></div>
-          <div class="paper-info"><strong class="paper-title">UVDiff: Learning Contact-Aware UV Diffusion to Reconstruct Hand-Object Interaction from Monocular Images</strong><strong>Binghui Zuo</strong>, Lin Zhou, Xiaohan Yuan, Wenqian Sun, Yangang Wang<br><em>Preprint, 2026</em><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
+          <div class="paper-info"><strong class="paper-title">Dual-R2H: Dual-Branch Behavior Understanding for Dynamic Robot-to-Human Handover</strong>Yue Yu*, <strong>Binghui Zuo*†</strong>, Lin Tao, Yiping Li, Yihao Bai, Yuhang Kong, and Yangang Wang‡<br><em>Preprint, 2026</em><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
         </article>
-        <article class="paper-item" data-category="robot-manipulation generative-models">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/CVPR2026/maskdexgrasp_teaser.jpg"><source src="assets/paper/CVPR2026/maskdexgrasp.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">MaskDexGrasp: Generative Masked Modeling for Part-Aware Dexterous Grasp Synthesis</strong><strong>Binghui Zuo</strong>, Lin Zhou, Haoxuan Xu, Jianan Yan, Zhipeng Yu, Zekai Liu, Yangang Wang<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</em><span class="paper-links"><a href="MaskDexGrasp/images/paper.pdf">[Paper]</a><a href="MaskDexGrasp/">[Project]</a></span><p class="paper-summary">A part-aware grasp tokenizer and bidirectional masked grasp transformer synthesize grasps conditioned on geometry and task descriptions.</p></div>
+        <article class="paper-item" data-category="preprint hand-object-interaction">
+          <div class="paper-media"><img src="assets/paper/Preprint_uv/uvdiff.jpg" alt="UVDiff teaser"></div>
+          <div class="paper-info"><strong class="paper-title">Modeling Interaction-Aware UV Map for Hand-Object Interaction Reconstruction</strong><strong>Binghui Zuo</strong>, Lin Zhou, Xiaohan Yuan, Chen Zhu, Yue Yu, Yangang Wang‡<br><em>Preprint, 2026</em><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
         </article>
-        <article class="paper-item" data-category="robot-manipulation">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/TIE2026/tie_teaser.jpg"><source src="assets/paper/TIE2026/TIE.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">Learning Part-Aware Functional Handovers for Human-to-Robot Collaboration</strong><strong>Binghui Zuo</strong>, Zhuolin Deng, Zhipeng Yu, Yuzhou Zheng, Wenqian Sun, Yangang Wang<br><em>IEEE Transactions on Industrial Electronics (TIE), 2026</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/11436066/" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/#publication" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A part-aware framework aligns robot receiving behaviors with human delivery actions.</p></div>
+        <article class="paper-item" data-category="preprint full-body-modeling">
+          <div class="paper-media"><img src="assets/paper/Preprint_sign/teaser.png" alt="UVDiff teaser"></div>
+          <div class="paper-info"><strong class="paper-title">MaskedSignGen: Part-Aware Masked Modeling with Body-Hand Token Fusion for Text-to-Sign Motion Generation</strong><strong>Binghui Zuo*</strong>, Yihao Bai*, Yuhang Kong*, Yunsheng Luo, Yue Yu, Yiping Li, and Yangang Wang‡<br><em>Preprint, 2026</em><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
         </article>
-        <article class="paper-item" data-category="generative-models">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/PR2025/SynInter_1.png"><source src="assets/paper/PR2025/pr.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">Two-stage Diffusion for Hands and Articulated Objects Interaction Synthesis</strong><strong>Wenqian Sun *</strong>, <strong>Binghui Zuo *</strong>, Zimeng Zhao, Zijing Wu, Yangang Wang<br><em>Pattern Recognition (PR), 2025</em><span class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320325014463" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">A two-stage approach synthesizes interactions between two hands and an articulated object from a target state.</p></div>
+        <article class="paper-item" data-category="robot-learning">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/CVPR2026_1/maskdexgrasp_teaser.jpg"><source src="assets/paper/CVPR2026_1/maskdexgrasp.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">MaskDexGrasp: Generative Masked Modeling for Part-Aware Dexterous Grasp Synthesis</strong><strong>Binghui Zuo</strong>, Lin Zhou, Haoxuan Xu, Jianan Yan, Zhipeng Yu, Zekai Liu, and Yangang Wang‡<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</em><span class="paper-links"><a href="MaskDexGrasp/images/paper.pdf">[Paper]</a><a href="MaskDexGrasp/">[Project]</a></span><p class="paper-summary">A part-aware grasp tokenizer and bidirectional masked grasp transformer synthesize grasps conditioned on geometry and task descriptions.</p></div>
         </article>
-        <article class="paper-item" data-category="generative-models">
-          <div class="paper-media"><img src="assets/paper/TIP2025/NPHand_0.jpg" alt="NP-Hand teaser"></div>
-          <div class="paper-info"><strong class="paper-title">NP-Hand: Novel Perspective Hand Image Synthesis Guided by Normals</strong><strong>Binghui Zuo</strong>, Wenqian Sun, Zimeng Zhao, Xiaohan Yuan, Yangang Wang<br><em>IEEE Transactions on Image Processing (TIP), 2025</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/10969541" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/tip2025-nphand/ZBH-NPHand-2025-04.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Normal maps guide a diffusion-and-GAN framework for consistent novel-view hand synthesis.</p></div>
+        <article class="paper-item" data-category="full-body-modeling">
+          <div class="paper-media"><img src="assets/paper/CVPR2026_2/teaser.png" alt="UVDiff teaser"></div>
+          <div class="paper-info"><strong class="paper-title">Occluded Human Body Capture with Frequency Domain Denoising Prior</strong>Buzhen Huang, Chongyang Xu, Wentao Tang, Yuan Shu, Jingyi Ju, <strong>Binghui Zuo</strong>, and Yangang Wang‡<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</em><span class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Occluded_Human_Body_Capture_with_Frequency_Domain_Denoising_Prior_CVPR_2026_paper.pdf">[Paper]</a></span><p class="paper-summary">A contact-aware UV representation unifies hand topology and contact patterns in a 2D UV space.</p></div>
+        </article>        
+        <article class="paper-item" data-category="robot-learning">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/TIE2026/tie_teaser.jpg"><source src="assets/paper/TIE2026/TIE.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">Learning Part-Aware Functional Handovers for Human-to-Robot Collaboration</strong><strong>Binghui Zuo</strong>, Zhuolin Deng, Zhipeng Yu, Yuzhou Zheng, Wenqian Sun, and Yangang Wang‡<br><em>IEEE Transactions on Industrial Electronics (TIE), 2026</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/11436066/" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">A part-aware framework aligns robot receiving behaviors with human delivery actions.</p></div>
         </article>
-        <article class="paper-item" data-category="robot-manipulation generative-models">
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/PR2025/SynInter_1.png"><source src="assets/paper/PR2025/pr.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">Two-stage Diffusion for Hands and Articulated Objects Interaction Synthesis</strong><strong>Wenqian Sun*</strong>, <strong>Binghui Zuo*†</strong>, Zimeng Zhao, Zijing Wu, and Yangang Wang‡<br><em>Pattern Recognition (PR), 2025</em><span class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320325014463" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">A two-stage approach synthesizes interactions between two hands and an articulated object from a target state.</p></div>
+        </article>
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/TIP2025/NPHand_0.jpg"><source src="assets/paper/TIP2025/demo.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">NP-Hand: Novel Perspective Hand Image Synthesis Guided by Normals</strong><strong>Binghui Zuo</strong>, Wenqian Sun, Zimeng Zhao, Xiaohan Yuan, and Yangang Wang‡<br><em>IEEE Transactions on Image Processing (TIP), 2025</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/10969541" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/tip2025-nphand/ZBH-NPHand-2025-04.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Normal maps guide a diffusion-and-GAN framework for consistent novel-view hand synthesis.</p></div>
+        </article>
+        <article class="paper-item" data-category="hand-object-interaction">
           <div class="paper-media"><img src="assets/paper/TVCG2024/GraspDiff_1.png" alt="GraspDiff teaser"></div>
-          <div class="paper-info"><strong class="paper-title">GraspDiff: Grasping Generation for Hand-Object Interaction With Multimodal Guided Diffusion</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wenqian Sun, Xiaohan Yuan, Zhipeng Yu, Yangang Wang<br><em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/10689328" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/tvcg2024-graspdiff/ZUO-GraspDiff-2024-09.html" target="_blank" rel="noopener">[Project]</a></span></div>
+          <div class="paper-info"><strong class="paper-title">GraspDiff: Grasping Generation for Hand-Object Interaction With Multimodal Guided Diffusion</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wenqian Sun, Xiaohan Yuan, Zhipeng Yu, and Yangang Wang‡<br><em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/10689328" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/tvcg2024-graspdiff/ZUO-GraspDiff-2024-09.html" target="_blank" rel="noopener">[Project]</a></span></div>
         </article>
-        <article class="paper-item" data-category="generative-models">
-          <div class="paper-media"><img src="assets/paper/SPL2025/music_0.jpg" alt="Music conditioned video generation teaser"></div>
-          <div class="paper-info"><strong class="paper-title">Music Conditioned Generation for Human-centric Video</strong>Zimeng Zhao, <strong>Binghui Zuo</strong>, Yangang Wang<br><em>IEEE Signal Processing Letters (SPL), 2024</em><span class="paper-links"><a href="https://ieeexplore.ieee.org/document/10415104" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">A DDPM-centered temporal framework generates long-duration, high-quality human-centric video from music.</p></div>
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/ICCV2023_1/interprior_0.png"><source src="assets/paper/ICCV2023_1/demo.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">Reconstructing Interacting Hands with Interaction Prior from Monocular Images</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wenqian Sun, Wei Xie, Zhou Xue, and Yangang Wang‡<br><em>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2308.14082/" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/iccv2023_interprior/BinghuiZuo-ICCV2023_InterPrior.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">The reconstruction task is recast as conditional sampling from a learned two-hand interaction prior.</p></div>
         </article>
-        <article class="paper-item" data-category="3d-reconstruction">
-          <div class="paper-media"><img src="assets/paper/ICCV2023_1/interprior_0.png" alt="Interaction Prior teaser"></div>
-          <div class="paper-info"><strong class="paper-title">Reconstructing Interacting Hands with Interaction Prior from Monocular Images</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wenqian Sun, Wei Xie, Zhou Xue, Yangang Wang<br><em>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2308.14082/" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/iccv2023_interprior/BinghuiZuo-ICCV2023_InterPrior.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">The reconstruction task is recast as conditional sampling from a learned two-hand interaction prior.</p></div>
-        </article>
-        <article class="paper-item" data-category="3d-reconstruction">
+        <article class="paper-item" data-category="hand-object-interaction">
           <div class="paper-media"><img src="assets/paper/ICCV2023_2/Nonrigid_1.png" alt="Nonrigid object contact teaser"></div>
-          <div class="paper-info"><strong class="paper-title">Nonrigid Object Contact Estimation With Regional Unwrapping Transformer</strong>Wei Xie, Zimeng Zhao, Shiying Li, <strong>Binghui Zuo</strong>, Yangang Wang<br><em>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2308.14074" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/iccv2023-nonrigid/XIE-NONRIGID-2023-07-paper.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Regional Unwrapping Profiles map estimated hand-object surfaces to high-resolution regional profiles.</p></div>
+          <div class="paper-info"><strong class="paper-title">Nonrigid Object Contact Estimation With Regional Unwrapping Transformer</strong>Wei Xie, Zimeng Zhao, Shiying Li, <strong>Binghui Zuo</strong>, and Yangang Wang‡<br><em>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2308.14074" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/iccv2023-nonrigid/XIE-NONRIGID-2023-07-paper.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Regional Unwrapping Profiles map estimated hand-object surfaces to high-resolution regional profiles.</p></div>
         </article>
-        <article class="paper-item" data-category="generative-models 3d-reconstruction">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/CVPR2023/markerless.png"><source src="assets/paper/CVPR2023/markerless.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination</strong>Zimeng Zhao, <strong>Binghui Zuo</strong>, Zhiyu Long, Yangang Wang<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2303.06380" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/CVPR2023/ZHAO-SHAR-2023-03.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A semi-supervised framework disentangles bare-hand structure and recovers appearance with dual adversarial discrimination.</p></div>
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/CVPR2023/markerless.png"><source src="assets/paper/CVPR2023/markerless.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">Semi-supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination</strong>Zimeng Zhao, <strong>Binghui Zuo</strong>, Zhiyu Long, and Yangang Wang‡<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</em><span class="paper-links"><a href="https://arxiv.org/abs/2303.06380" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/CVPR2023/ZHAO-SHAR-2023-03.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A semi-supervised framework disentangles bare-hand structure and recovers appearance with dual adversarial discrimination.</p></div>
         </article>
-        <article class="paper-item" data-category="3d-reconstruction">
+        <article class="paper-item" data-category="full-body-modeling">
           <div class="paper-media"><img src="assets/paper/TVCG2023/skeleton0.png" alt="Skeleton extraction teaser"></div>
-          <div class="paper-info"><strong class="paper-title">Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles</strong>Zimeng Zhao, Wei Xie, <strong>Binghui Zuo</strong>, Yangang Wang<br><em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023</em><span class="paper-links"><a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Spherical Unwrapping Profiles map surfaces into image planes independently of mesh topology.</p></div>
+          <div class="paper-info"><strong class="paper-title">Skeleton Extraction for Articulated Objects with the Spherical Unwrapping Profiles</strong>Zimeng Zhao, Wei Xie, <strong>Binghui Zuo</strong>, and Yangang Wang‡<br><em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023</em><span class="paper-links"><a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/TVCG2023/ZHAO-SUPPLE-TVCG-2023.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">Spherical Unwrapping Profiles map surfaces into image planes independently of mesh topology.</p></div>
         </article>
-        <article class="paper-item" data-category="3d-reconstruction">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/CVPR2022/stable.png"><source src="assets/paper/CVPR2022/stable_video.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">Stability-driven Contact Reconstruction From Monocular Color Images</strong>Zimeng Zhao, <strong>Binghui Zuo</strong>, Wei Xie, Yangang Wang<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</em><span class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/ZZM-SCR-2022-03.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A physics engine refines reconstructed hand-object interactions to produce more realistic results.</p></div>
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/GM2023/hdo.png"><source src="assets/paper/GM2023/hdo.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">HMDO: Markerless Multi-view Hand Manipulation Capture with Deformable Objects</strong>Wei Xie *, Zhipeng Yu *, Zimeng Zhao, <strong>Binghui Zuo</strong>, and Yangang Wang‡<br><em>International Conference on Computational Visual Media (CVM, Oral), 2023</em><span class="paper-links"><a href="https://arxiv.org/pdf/2301.07652.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/cvm2023-hmdo/XIE-HMDO-2023.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A markerless dataset and baseline capture hand interactions with deformable objects.</p></div>
         </article>
-        <article class="paper-item" data-category="3d-reconstruction">
-          <div class="paper-media"><video muted autoplay loop playsinline poster="assets/paper/GM2023/hdo.png"><source src="assets/paper/GM2023/hdo.mp4" type="video/mp4"></video></div>
-          <div class="paper-info"><strong class="paper-title">HMDO: Markerless Multi-view Hand Manipulation Capture with Deformable Objects</strong>Wei Xie *, Zhipeng Yu *, Zimeng Zhao, <strong>Binghui Zuo</strong>, Yangang Wang<br><em>International Conference on Computational Visual Media (CVM), 2023</em><span class="paper-links"><a href="https://arxiv.org/pdf/2301.07652.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/cvm2023-hmdo/XIE-HMDO-2023.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A markerless dataset and baseline capture hand interactions with deformable objects.</p></div>
-        </article>
-        <article class="paper-item" data-category="3d-reconstruction">
+        <article class="paper-item" data-category="hand-object-interaction">
           <div class="paper-media"><img src="assets/paper/ICIG2023/IRiHR_0.png" alt="Implicit interacting hands reconstruction teaser"></div>
-          <div class="paper-info"><strong class="paper-title">Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wei Xie, Yangang Wang<br><em>International Conference on Image and Graphics (ICIG, Oral), 2023</em><span class="paper-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-46305-1_2" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">Implicit functions represent interacting hand surfaces using image features as queries and conditions.</p></div>
+          <div class="paper-info"><strong class="paper-title">Implicit Representation for Interacting Hands Reconstruction from Monocular Color Images</strong><strong>Binghui Zuo</strong>, Zimeng Zhao, Wei Xie, and Yangang Wang‡<br><em>International Conference on Image and Graphics (ICIG, Oral), 2023</em><span class="paper-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-46305-1_2" target="_blank" rel="noopener">[Paper]</a></span><p class="paper-summary">Implicit functions represent interacting hand surfaces using image features as queries and conditions.</p></div>
         </article>
+        <article class="paper-item" data-category="hand-object-interaction">
+          <div class="paper-media"><video muted loop playsinline preload="none" poster="assets/paper/CVPR2022/stable.png"><source src="assets/paper/CVPR2022/stable_video.mp4" type="video/mp4"></video></div>
+          <div class="paper-info"><strong class="paper-title">Stability-driven Contact Reconstruction From Monocular Color Images</strong>Zimeng Zhao, <strong>Binghui Zuo</strong>, Wei Xie, and Yangang Wang‡<br><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</em><span class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_Stability-Driven_Contact_Reconstruction_From_Monocular_Color_Images_CVPR_2022_paper.pdf" target="_blank" rel="noopener">[Paper]</a><a href="https://www.yangangwang.com/papers/ZZM-SCR-2022-03.html" target="_blank" rel="noopener">[Project]</a></span><p class="paper-summary">A physics engine refines reconstructed hand-object interactions to produce more realistic results.</p></div>
+        </article>        
       </div>
     </section>
   </main>
@@ -88,6 +104,24 @@
       const filterButtons = document.querySelectorAll(".filter-button");
       const paperItems = document.querySelectorAll(".paper-item");
       const visiblePaperCount = document.getElementById("visible-paper-count");
+      visiblePaperCount.textContent = paperItems.length;
+
+      const resetVideo = (video) => {
+        video.pause();
+        video.currentTime = 0;
+        video.load();
+      };
+
+      paperItems.forEach((paper) => {
+        const video = paper.querySelector("video");
+        if (!video) return;
+
+        paper.classList.add("has-hover-video");
+        paper.addEventListener("mouseenter", () => {
+          if (!paper.hidden) video.play().catch(() => {});
+        });
+        paper.addEventListener("mouseleave", () => resetVideo(video));
+      });
 
       filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -105,13 +139,9 @@
             const shouldShow = selectedFilter === "all" || categories.includes(selectedFilter);
             paper.hidden = !shouldShow;
 
-            paper.querySelectorAll("video").forEach((video) => {
-              if (shouldShow) {
-                video.play().catch(() => {});
-              } else {
-                video.pause();
-              }
-            });
+            if (!shouldShow) {
+              paper.querySelectorAll("video").forEach(resetVideo);
+            }
 
             if (shouldShow) visibleCount += 1;
           });
