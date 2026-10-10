@@ -9,6 +9,7 @@
 *.gz
 *.xdv
 .DS_Store
+.preview/
 tmp.html
 template.html
 reference
